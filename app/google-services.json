@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "248811925970",
+    "project_id": "code-iiest",
+    "storage_bucket": "code-iiest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248811925970:android:a45fa92e8ebf026b76180b",
+        "android_client_info": {
+          "package_name": "com.example.codeiiest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248811925970-5vvssrtj749ctg3opo84jibab1f33okd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd1IN4oYPs0v7TFWTf7LEhw6vr045fgeo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248811925970-5vvssrtj749ctg3opo84jibab1f33okd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
