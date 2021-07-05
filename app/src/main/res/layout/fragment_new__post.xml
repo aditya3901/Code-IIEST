@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NewPostFragment"
+    android:background="@drawable/tele">
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Topic : "
+        android:fontFamily="sans-serif-black"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/ed_1"
+        android:padding="10dp"
+        android:background="@drawable/post_edit_text_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        app:layout_constraintTop_toBottomOf="@id/titleTV"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/contentTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ed_1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Context : "
+        android:fontFamily="sans-serif-black"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/ed_2"
+        android:padding="10dp"
+        android:background="@drawable/post_edit_text_bg"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:hint="Context"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/contentTV"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/linkTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ed_2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Link : "
+        android:fontFamily="sans-serif-black"
+        android:textSize="20sp"/>
+    <EditText
+        android:textColor="@android:color/holo_blue_dark"
+        android:id="@+id/ed_3"
+        android:padding="10dp"
+        android:background="@drawable/post_edit_text_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Link"
+        app:layout_constraintTop_toBottomOf="@id/linkTV"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="20dp"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="20dp"
+        android:id="@+id/done"
+        android:src="@drawable/ic_baseline_check_24"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
