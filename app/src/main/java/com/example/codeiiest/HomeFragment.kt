@@ -1,5 +1,7 @@
 package com.example.codeiiest
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -17,7 +19,7 @@ import com.google.firebase.database.ktx.database
 import com.google.firebase.database.ktx.getValue
 import com.google.firebase.ktx.Firebase
 
-class HomeFragment : Fragment() {
+class HomeFragment : Fragment() , OnClickHandler{
 
     var list = ArrayList<PostData>()
     lateinit var ref: DatabaseReference
@@ -45,7 +47,7 @@ class HomeFragment : Fragment() {
         val layoutManager = LinearLayoutManager(context)
         layoutManager.stackFromEnd = true
         recyclerView.layoutManager = layoutManager
-        val adapter = context?.let { RecyclerAdapter(it, list) }
+        val adapter = context?.let { RecyclerAdapter(it, list, this) }
         recyclerView.adapter = adapter
 
         ref = FirebaseDatabase.getInstance().getReference("Post")
@@ -68,6 +70,13 @@ class HomeFragment : Fragment() {
         })
 
         return root
+    }
+
+    override fun onItemClick(post: PostData) {
+        val url: String = post.link
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(url)
+        startActivity(intent)
     }
 
 }

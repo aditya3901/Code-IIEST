@@ -7,14 +7,14 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class RecyclerAdapter(val context: Context, val list: ArrayList<PostData>): RecyclerView.Adapter<RecyclerAdapter.RecyclerViewHolder>() {
+class RecyclerAdapter(val context: Context, val list: ArrayList<PostData>, private val listener: OnClickHandler): RecyclerView.Adapter<RecyclerAdapter.RecyclerViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerViewHolder {
         val viewHolder = RecyclerViewHolder(LayoutInflater.from(context).inflate(R.layout.recycler_item, parent, false))
 
-//        viewHolder.url.setOnClickListener {
-//            listener.onItemClick(list[viewHolder.adapterPosition])
-//        }
+        viewHolder.url.setOnClickListener {
+            listener.onItemClick(list[viewHolder.adapterPosition])
+        }
         return viewHolder
     }
 
@@ -38,6 +38,6 @@ class RecyclerAdapter(val context: Context, val list: ArrayList<PostData>): Recy
     }
 }
 
-//interface onClickHandler {
-//    fun onItemClick(post: PostData)
-//}
+interface OnClickHandler {
+    fun onItemClick(post: PostData)
+}
