@@ -9,6 +9,11 @@ import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
+import com.example.codeiiest.auth.Login
+import com.example.codeiiest.fragments.AboutFragment
+import com.example.codeiiest.fragments.ChaptersFragment
+import com.example.codeiiest.fragments.ContactFragment
+import com.example.codeiiest.fragments.HomeFragment
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase

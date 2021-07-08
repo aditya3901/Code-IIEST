@@ -1,4 +1,4 @@
-package com.example.codeiiest
+package com.example.codeiiest.fragments
 
 import android.os.Build
 import android.os.Bundle
@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.Toast
 import androidx.annotation.RequiresApi
+import com.example.codeiiest.PostData
+import com.example.codeiiest.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ktx.database
