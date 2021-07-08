@@ -6,10 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/tele"
+    android:background="#EDEDED"
     tools:context=".AboutFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:elevation="10dp"
         android:layout_margin="20dp"
         android:background="@drawable/post_edit_text_bg"
         android:layout_width="match_parent"

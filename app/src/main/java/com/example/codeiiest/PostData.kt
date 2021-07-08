@@ -6,6 +6,5 @@ data class PostData(
     val link: String,
     val dateTime: String
 ) {
-    constructor() : this("","","",""){
-    }
+    constructor() : this("","","","")
 }

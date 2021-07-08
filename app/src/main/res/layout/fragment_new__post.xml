@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".NewPostFragment"
-    android:background="@drawable/tele">
+    android:background="#EDEDED">
 
     <TextView
         android:id="@+id/titleTV"
@@ -20,6 +20,7 @@
         android:fontFamily="sans-serif-black"
         android:textSize="20sp"/>
     <EditText
+        android:elevation="10dp"
         android:id="@+id/ed_1"
         android:padding="10dp"
         android:background="@drawable/post_edit_text_bg"
@@ -44,6 +45,7 @@
         android:fontFamily="sans-serif-black"
         android:textSize="20sp"/>
     <EditText
+        android:elevation="10dp"
         android:id="@+id/ed_2"
         android:padding="10dp"
         android:background="@drawable/post_edit_text_bg"
@@ -69,6 +71,7 @@
         android:fontFamily="sans-serif-black"
         android:textSize="20sp"/>
     <EditText
+        android:elevation="10dp"
         android:textColor="@android:color/holo_blue_dark"
         android:id="@+id/ed_3"
         android:padding="10dp"

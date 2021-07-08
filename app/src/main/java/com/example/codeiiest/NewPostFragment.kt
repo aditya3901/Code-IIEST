@@ -10,7 +10,6 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import com.google.firebase.auth.ktx.auth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
@@ -42,9 +41,7 @@ class NewPostFragment : Fragment() {
                     linkET.text.toString(), currentDateTime.format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss")))
 
                 database = Firebase.database.reference
-
                 database.child("Post").child(currentDateTime.format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss"))).setValue(post)
-
 
                 Toast.makeText(context, "Post Successful", Toast.LENGTH_SHORT).show()
                 val transaction = activity?.supportFragmentManager?.beginTransaction()
