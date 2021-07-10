@@ -1,28 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item
-        android:id="@+id/home"
-        android:icon="@drawable/ic_baseline_home_24"
-        android:title="Home" />
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="Home" />
+        <item
+            android:id="@+id/about"
+            android:title="About"
+            android:icon="@drawable/ic_baseline_people_24"/>
+        <item
+            android:id="@+id/chapters"
+            android:title="Chapters"
+            android:icon="@drawable/ic_baseline_code_24"/>
+        <item
+            android:id="@+id/contact"
+            android:title="Contact"
+            android:icon="@drawable/ic_baseline_mark_email_read_24"/>
+    </group>
 
-    <item
-        android:id="@+id/about"
-        android:title="About"
-        android:icon="@drawable/ic_baseline_people_24"/>
+    <item android:title="Account">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/profile"
+                    android:title="Profile"
+                    android:icon="@drawable/ic_baseline_account_circle_24"/>
 
-    <item
-        android:id="@+id/chapters"
-        android:title="Chapters"
-        android:icon="@drawable/ic_baseline_code_24"/>
+                <item
+                    android:id="@+id/settings"
+                    android:title="Settings"
+                    android:icon="@drawable/ic_baseline_settings_24"/>
+            </group>
+        </menu>
+    </item>
 
-    <item
-        android:id="@+id/contact"
-        android:title="Contact"
-        android:icon="@drawable/ic_baseline_mark_email_read_24"/>
+    <item android:title="Communicate">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/share"
+                    android:title="Share"
+                    android:icon="@drawable/ic_baseline_share_24"/>
+                <item
+                    android:id="@+id/rate"
+                    android:title="Rate Us"
+                    android:icon="@drawable/ic_baseline_star_rate_24"/>
+            </group>
+        </menu>
+    </item>
 
-    <item
-        android:id="@+id/settings"
-        android:title="Settings"
-        android:icon="@drawable/ic_baseline_settings_24"/>
 </menu>

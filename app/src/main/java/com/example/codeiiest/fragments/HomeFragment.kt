@@ -19,7 +19,7 @@ import com.google.firebase.database.*
 class HomeFragment : Fragment() , OnClickHandler {
 
     var list = ArrayList<PostData>()
-    lateinit var ref: DatabaseReference
+    private lateinit var ref: DatabaseReference
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -57,6 +57,7 @@ class HomeFragment : Fragment() , OnClickHandler {
                     }
                     adapter?.notifyDataSetChanged()
                     loader.visibility = View.GONE
+
                 }
             }
 
