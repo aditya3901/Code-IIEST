@@ -10,10 +10,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import com.example.codeiiest.auth.Login
-import com.example.codeiiest.fragments.AboutFragment
-import com.example.codeiiest.fragments.ChaptersFragment
-import com.example.codeiiest.fragments.ContactFragment
-import com.example.codeiiest.fragments.HomeFragment
+import com.example.codeiiest.fragments.*
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -74,6 +71,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.contact -> {
                 setToolbarTitle("Contact Us")
                 changeFragment(ContactFragment())
+            }
+            R.id.general -> {
+                setToolbarTitle("General")
+                changeFragment(GeneralChat())
+            }
+            R.id.cp -> {
+                setToolbarTitle("Competitive Coding")
+                changeFragment(CP())
             }
         }
         return true

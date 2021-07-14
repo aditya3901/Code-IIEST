@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.NewPostFragment"
-    android:background="#EDEDED">
+    android:background="@drawable/tele">
 
     <TextView
         android:id="@+id/titleTV"
@@ -22,7 +22,7 @@
     <EditText
         android:elevation="10dp"
         android:id="@+id/ed_1"
-        android:padding="10dp"
+        android:padding="12dp"
         android:background="@drawable/post_edit_text_bg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -74,7 +74,7 @@
         android:elevation="10dp"
         android:textColor="@android:color/holo_blue_dark"
         android:id="@+id/ed_3"
-        android:padding="10dp"
+        android:padding="12dp"
         android:background="@drawable/post_edit_text_bg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
