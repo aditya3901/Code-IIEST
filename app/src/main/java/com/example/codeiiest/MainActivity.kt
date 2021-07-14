@@ -80,6 +80,18 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 setToolbarTitle("Competitive Coding")
                 changeFragment(CP())
             }
+            R.id.dev -> {
+                setToolbarTitle("Dev & Sec")
+                changeFragment(DevSec())
+            }
+            R.id.ml -> {
+                setToolbarTitle("Machine Learning")
+                changeFragment(MachineLearning())
+            }
+            R.id.offTopic -> {
+                setToolbarTitle("Off Topic")
+                changeFragment(OffTopic())
+            }
         }
         return true
     }
