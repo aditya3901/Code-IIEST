@@ -10,6 +10,7 @@ import android.widget.ImageView
 import android.widget.ProgressBar
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.airbnb.lottie.LottieAnimationView
 import com.example.codeiiest.ChatAdapter
 import com.example.codeiiest.ChatModel
 import com.example.codeiiest.R
@@ -37,7 +38,7 @@ class DevSec : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val loader: ProgressBar = view.findViewById(R.id.chatLoader)
+        val loader: LottieAnimationView = view.findViewById(R.id.animationView)
         loader.visibility = View.VISIBLE
         val user = Firebase.auth.currentUser
         val editText: EditText = view.findViewById(R.id.editText)

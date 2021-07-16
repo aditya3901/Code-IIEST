@@ -11,6 +11,7 @@ import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.airbnb.lottie.LottieAnimationView
 import com.example.codeiiest.*
 import com.example.codeiiest.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -28,7 +29,7 @@ class HomeFragment : Fragment() , OnClickHandler {
         // Inflate the layout for this fragment
         val root = inflater.inflate(R.layout.fragment_home, container, false)
 
-        val loader = root.findViewById<ProgressBar>(R.id.loader)
+        val loader = root.findViewById<LottieAnimationView>(R.id.animationView)
         loader.visibility = View.VISIBLE
 
         val fabBtn = root.findViewById<FloatingActionButton>(R.id.fab)

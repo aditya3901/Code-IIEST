@@ -13,6 +13,7 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.airbnb.lottie.LottieAnimationView
 import com.example.codeiiest.ChatAdapter
 import com.example.codeiiest.ChatModel
 import com.example.codeiiest.PostData
@@ -45,7 +46,7 @@ class GeneralChat : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val loader: ProgressBar = view.findViewById(R.id.chatLoader)
+        val loader: LottieAnimationView = view.findViewById(R.id.animationView)
         loader.visibility = View.VISIBLE
         val user = Firebase.auth.currentUser
         val editText: EditText = view.findViewById(R.id.editText)

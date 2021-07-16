@@ -32,17 +32,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <View
-            android:id="@+id/line"
-            android:layout_margin="20dp"
-            android:layout_width="100dp"
-            android:layout_height="3dp"
-            android:background="@android:color/holo_blue_dark"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/top"/>
-
         <TextView
             android:id="@+id/body"
             android:text="CodeIIEST is one of the newest clubs of Indian Institute of Engineering Science and Technology, Shibpur. Formed in Nov’14 , the club has been actively involved in cultivating comprehensive skills in computer science among the students. The club consists of various enthusiasts and is a wonderful hub for a plethora of informative and interactive sessions. The students keep themselves updated with the emerging technologies, which further help them strengthen their skills and enhance creativity and innovation."
@@ -51,7 +40,7 @@
             android:layout_marginRight="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/line"
+            app:layout_constraintTop_toBottomOf="@id/top"
             app:layout_constraintBottom_toTopOf="@id/line2"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
@@ -60,7 +49,7 @@
             android:id="@+id/line2"
             android:layout_margin="20dp"
             android:layout_width="100dp"
-            android:layout_height="3dp"
+            android:layout_height="2dp"
             android:background="@android:color/holo_blue_dark"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
